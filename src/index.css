@@ -1,0 +1,14 @@
+body {
+
+    background-image: url('./images/background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

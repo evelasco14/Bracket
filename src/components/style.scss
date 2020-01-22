@@ -1,0 +1,64 @@
+
+$border-color: #FF530A;
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.round {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+  list-style: none;
+  padding: 0;
+
+  .spacer {
+    flex-grow: 5;
+
+    &:first-child, &:last-child {
+      flex-grow: 1.0;
+    }
+  }
+
+  .game-spacer {
+    flex-grow: 2;
+  }
+}
+
+body {
+  font-family: sans-serif;
+  font-size: medium;
+  padding: 10px;
+  line-height: 1.4em;
+  color: white;
+}
+
+li {
+  &.game {
+    padding-left: 20px;
+
+    &.winner {
+      font-weight: bold;
+    }
+
+
+  }
+
+  &.game-top {
+    border-bottom: 1px solid $border-color;
+    min-height: 10px;
+
+  }
+
+  &.game-spacer {
+    border-right: 1px solid $border-color;
+    min-height: 40px;
+  }
+
+  &.game-bottom {
+    border-top: 1px solid $border-color;
+    min-height: 15px;
+  }
+}
